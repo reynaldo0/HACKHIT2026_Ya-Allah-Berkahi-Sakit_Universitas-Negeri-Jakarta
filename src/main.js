@@ -1,24 +1,23 @@
-// window.initLoadingScreen({
-//   videoSrc: "assets/video/loading.mp4",
-//   minDuration: 1000,
-//   maxDuration: 2000,
-//   onLoaded: () => {
-//     requestAnimationFrame(() => {
-//       requestAnimationFrame(() => {
-//         AOS.init({
-//           once: true,
-//           duration: 900,
-//           easing: "ease-out-cubic",
-//           offset: 10,
-//           disableMutationObserver: true,
-//         });
-//         AOS.refreshHard();
-//       });
-//     });
-//   },
-// });
+window.initLoadingScreen({
+  videoSrc: "assets/video/loading.mp4",
+  minDuration: 1000,
+  maxDuration: 2000,
+  onLoaded: () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        AOS.init({
+          once: true,
+          duration: 900,
+          easing: "ease-out-cubic",
+          offset: 10,
+          disableMutationObserver: true,
+        });
+        AOS.refreshHard();
+      });
+    });
+  },
+});
 
-AOS.init({ once: true });
 const overlay = document.getElementById("modalOverlay");
 const closeBtn = document.getElementById("modalClose");
 const okBtn = document.getElementById("modalOk");
