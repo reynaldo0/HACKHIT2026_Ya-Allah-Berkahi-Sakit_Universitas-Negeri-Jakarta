@@ -18,7 +18,7 @@
 //   },
 // });
 
-AOS.init();
+AOS.init({ once: true });
 const overlay = document.getElementById("modalOverlay");
 const closeBtn = document.getElementById("modalClose");
 const okBtn = document.getElementById("modalOk");

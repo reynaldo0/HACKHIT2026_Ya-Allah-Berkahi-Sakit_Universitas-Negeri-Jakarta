@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen bg-[#0B0E14] text-white antialiased">
+  <body class="min-h-screen bg-[#0B0E14] text-white antialiased overflow-x-hidden ">
     <div
       class="fixed top-0 left-0 w-full z-50 flex justify-center px-3 sm:px-4 pt-3 sm:pt-4 anim-fade-in-down"
     >
@@ -500,7 +500,7 @@
                     class="detail-btn mt-3 inline-flex items-center justify-center rounded-lg px-10 sm:px-16 md:px-20 py-2 text-xs font-semibold border border-white/10 bg-black/80 hover:bg-black transition shadow-[0_10px_30px_rgba(190,60,61,0.45)] hover:shadow-[0_16px_40px_rgba(190,60,61,0.65)]"
                     data-title="Otomatisasi Pekerjaan"
                     data-video="assets/video/otomasi.mp4"
-                    data-desc="Mesin dan sistem otomatis kini mampu melakukan banyak pekerjaan manusia dengan lebih cepat dan efisien. Di satu sisi, ini meningkatkan produktivitas. Namun di sisi lain, banyak orang mulai merasa kehilangan peran, keamanan, dan makna dalam dunia kerja.
+                    data-desc="Mesin dan sistem otomatis kini mampu melakukan banyak pekerjaan manusiadengan lebih cepat dan efisien. Di satu sisi, ini meningkatkan produktivitas. Namun di sisi lain, banyak orang mulai merasa kehilangan peran, keamanan, dan makna dalam dunia kerja.
 Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia tetap memiliki tempat di dalamnya."
                   >
                     Detail
@@ -945,7 +945,7 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
         ></div>
         <div class="absolute inset-0 pointer-events-none">
           <div
-            class="absolute left-[15%] top-1/2 -translate-y-1/2 w-[250px] h-[250px] rounded-full blur-[100px] opacity-25 bg-gradient-to-tr from-[#00F5D4]"
+            class="absolute left-[15%] top-1/2 -translate-y-1/2 w-[250px] h-[50px] rounded-full blur-[100px] opacity-25 bg-gradient-to-tr from-[#00F5D4]"
           ></div>
         </div>
 
@@ -1201,7 +1201,6 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
           </div>
         </div>
 
-        <!-- Saturn Video (below pillar cards) -->
         <div class="mt-10 flex justify-end">
           <video
             autoplay
@@ -1209,13 +1208,12 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
             loop
             playsinline
             preload="metadata"
-            class="w-[180px] sm:w-[240px] md:w-[500px] pointer-events-none mix-blend-screen"
+            class="w-[180px] sm:w-[240px] md:w-[500px] "
           >
             <source src="assets/video/saturn.mp4" type="video/mp4" />
           </video>
         </div>
 
-        <!-- Astronaut Quote Section -->
         <div
           class="relative w-full mt-16 sm:mt-20 md:mt-28 overflow-hidden"
           data-aos="fade-up"
@@ -1240,7 +1238,7 @@ Pertanyaannya bukan apakah otomatisasi bisa terjadi,melainkan bagaimana manusia 
 
             <!-- Quote Text -->
             <div
-              class="flex-1 px-4 sm:px-8 md:px-14 lg:px-20"
+              class="flex-1 flex items-center justify-center px-4 sm:px-8 md:px-14 lg:px-20"
               data-aos="fade-left"
               data-aos-duration="900"
               data-aos-delay="400"
