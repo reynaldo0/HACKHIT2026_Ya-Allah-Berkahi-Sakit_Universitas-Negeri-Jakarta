@@ -1,23 +1,24 @@
-window.initLoadingScreen({
-  videoSrc: "assets/video/loading.mp4",
-  minDuration: 1000,
-  maxDuration: 2000,
-  onLoaded: () => {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        AOS.init({
-          once: true,
-          duration: 900,
-          easing: "ease-out-cubic",
-          offset: 10,
-          disableMutationObserver: true,
-        });
-        AOS.refreshHard();
-      });
-    });
-  },
-});
+// window.initLoadingScreen({
+//   videoSrc: "assets/video/loading.mp4",
+//   minDuration: 1000,
+//   maxDuration: 2000,
+//   onLoaded: () => {
+//     requestAnimationFrame(() => {
+//       requestAnimationFrame(() => {
+//         AOS.init({
+//           once: true,
+//           duration: 900,
+//           easing: "ease-out-cubic",
+//           offset: 10,
+//           disableMutationObserver: true,
+//         });
+//         AOS.refreshHard();
+//       });
+//     });
+//   },
+// });
 
+AOS.init();
 const overlay = document.getElementById("modalOverlay");
 const closeBtn = document.getElementById("modalClose");
 const okBtn = document.getElementById("modalOk");
@@ -121,8 +122,6 @@ window.addEventListener("keydown", (e) => {
 document.getElementById("menu-toggle").addEventListener("click", function () {
   document.getElementById("mobile-menu").classList.toggle("hidden");
 });
-
-AOS.init();
 
 var ufoMarquee = document.getElementById("ufo-marquee");
 var ufoMarquee2 = document.getElementById("ufo-marquee-2");
