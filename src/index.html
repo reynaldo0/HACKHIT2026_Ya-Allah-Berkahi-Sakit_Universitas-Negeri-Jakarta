@@ -391,16 +391,6 @@
         id="section5"
         class="relative overflow-hidden grain min-h-screen flex items-center bg-[#0B0F1D]"
       >
-        <!-- <video
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          class="absolute bottom-0 right-0 w-[220px] sm:w-[260px] md:w-[720px] pointer-events-none mix-blend-screen z-0"
-        >
-          <source src="assets/video/saturn.mp4" type="video/mp4" />
-        </video> -->
 
         <div
           class="absolute left-20 bottom-0 md:w-[520px] h-[520px] rounded-t-full blur-[140px] opacity-40 bg-gradient-to-tr from-[#00F5D4]"
@@ -460,13 +450,12 @@
 
       <section
         id="section6"
-        class="min-h-screen bg-[#0B0F1D] text-white relative flex items-center justify-center px-4 py-12 sm:py-16"
-        class="min-h-screen bg-[#0B0F1D] text-white relative flex items-center justify-center"
+        class="bg-[#0B0F1D] text-white relative px-4 py-12 sm:py-16"
         data-aos="fade-up"
         data-aos-duration="900"
         data-aos-delay="80"
       >
-        <div class="w-full max-w-6xl relative">
+        <div class="w-full max-w-6xl mx-auto relative pt-8 sm:pt-12">
           <div
             class="text-center"
             data-aos="zoom-in"
@@ -516,7 +505,7 @@
                   <div class="aspect-[4/3] w-full grid place-items-center">
                     <img
                       loading="lazy"
-                      src="assets/illustrasi/pilar1.svg"
+                      src="assets/foto/pilar1.svg"
                       alt="Teknologi Berpusat pada Manusia"
                       class="w-full h-full object-contain"
                     />
@@ -581,7 +570,7 @@
                   <div class="aspect-[4/3] w-full grid place-items-center">
                     <img
                       loading="lazy"
-                      src="assets/illustrasi/pilar2.svg"
+                      src="assets/foto/pilar2.svg"
                       alt="Kecerdasan yang Memperkuat"
                       class="w-full h-full object-contain"
                     />
@@ -636,7 +625,7 @@
                   <div class="aspect-[4/3] w-full grid place-items-center">
                     <img
                       loading="lazy"
-                      src="assets/illustrasi/pilar3.svg"
+                      src="assets/foto/pilar3.svg"
                       alt="Etika sebagai Fondasi"
                       class="w-full h-full object-contain"
                     />
@@ -661,6 +650,59 @@
                 </div>
               </div>
             </article>
+          </div>
+        </div>
+
+        <!-- Saturn Video (below pillar cards) -->
+        <div class="mt-10 flex justify-end">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            class="w-[180px] sm:w-[240px] md:w-[500px] pointer-events-none mix-blend-screen"
+          >
+            <source src="assets/video/saturn.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- Astronaut Quote Section -->
+        <div
+          class="relative w-full mt-16 sm:mt-20 md:mt-28 overflow-hidden"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="200"
+        >
+          <div class="flex flex-row items-center">
+            <!-- Astronaut Image -->
+            <div
+              class="relative w-[100px] sm:w-[120px] md:w-[160px] lg:w-[190px] flex-shrink-0 -ml-[50px] sm:-ml-[60px] md:-ml-[80px] lg:-ml-[95px]"
+              data-aos="fade-right"
+              data-aos-duration="900"
+              data-aos-delay="300"
+            >
+              <img
+                loading="lazy"
+                src="assets/foto/astornot.svg"
+                alt="Astronaut"
+                class="w-full h-auto"
+              />
+            </div>
+
+            <!-- Quote Text -->
+            <div
+              class="flex-1 px-4 sm:px-8 md:px-14 lg:px-20"
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-delay="400"
+            >
+              <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white/75 leading-relaxed max-w-xl">
+                Ketika teknologi dikembangkan dengan empati dan tanggung jawab,
+                masa depan tidak lagi terasa asing, melainkan menjadi tempat di
+                mana manusia tetap menjadi pusatnya.
+              </p>
+            </div>
           </div>
         </div>
       </section>
