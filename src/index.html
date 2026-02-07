@@ -148,9 +148,54 @@
       </nav>
     </div>
     <main>
-      <section>
-        <div>
-          <div class="font-orbitron">Hello</div>
+      <section
+        class="relative min-h-screen overflow-hidden flex items-center justify-center"
+        id="hero"
+      >
+        <div
+          class="absolute inset-0 z-10 pointer-events-none anim-fade-in-up"
+          style="animation-delay: 0.6s"
+        >
+          <div
+            class="absolute -left-40 -bottom-40 w-[520px] h-[520px] rounded-t-full blur-[140px] opacity-40 bg-gradient-to-tr from-indigo-600 to-indigo-300"
+          ></div>
+          <div
+            class="absolute -right-40 -bottom-40 w-[520px] h-[520px] rounded-t-full blur-[140px] opacity-40 bg-gradient-to-tr from-indigo-600 to-indigo-300"
+          ></div>
+          <img
+            src="assets/ufo.svg"
+            alt="UFO"
+            loading="lazy"
+            class="absolute left-[4%] top-[15%] sm:top-[6%] w-[110px] md:w-[240px] opacity-95 anim-float anim-fade-in-down"
+            style="animation-delay: 0.3s"
+          />
+          <img
+            src="assets/satelit.svg"
+            alt="Satelit"
+            loading="lazy"
+            class="absolute right-[4%] top-[15%] sm:top-[6%] w-[110px] md:w-[240px] opacity-95 anim-float anim-fade-in-down"
+            style="animation-delay: 0.3s"
+          />
+          <img
+            loading="lazy"
+            src="assets/gedung.svg"
+            alt="City"
+            class="absolute left-0 bottom-10 w-[200px] sm:w-[320px] md:w-[420px] max-w-[70vw] opacity-95 anim-fade-in-up"
+            style="animation-delay: 0.5s"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="350"
+          />
+          <img
+            loading="lazy"
+            src="assets/human.svg"
+            alt="City"
+            class="absolute right-10 bottom-10 w-[200px] sm:w-[320px] md:w-[420px] max-w-[70vw] opacity-95 anim-fade-in-up"
+            style="animation-delay: 0.5s"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="350"
+          />
         </div>
       </section>
       <section></section>
